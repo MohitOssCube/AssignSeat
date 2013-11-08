@@ -58,6 +58,7 @@ ul {
 
 #bg {
 	background: url('../images/shadow.png') top left repeat-x;
+        padding: 7px;
 }
 
 #banner {
@@ -167,9 +168,10 @@ ul {
 }
 
 #header {
-	position: relative;
-	padding: 40px;
-	height: 120px;
+    background: url("../images/shadow.png") repeat-x scroll left top transparent;
+    box-shadow: 0 0 33px #DEB887;
+    height: 163px;
+    position: relative;
 }
 
 #logo {
@@ -177,7 +179,7 @@ ul {
 	top: 40px;
 	left: 40px;
 	height: 120px;
-	line-height: 120px;
+	/*line-height: 120px;*/
 }
 
 #logo a {
@@ -186,9 +188,14 @@ ul {
 }
 
 #logo h1 {
-	font-size: 5.5em;
-	font-family: Lobster, cursive;
-	text-shadow: 0 2px 1px #32251B;
+    /*	font-size: 5.5em;
+            font-family: Lobster, cursive;
+            text-shadow: 0 2px 1px #32251B;*/
+    font-family: Lobster,cursive;
+    font-size: 4.5em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 1px #32251B;
 }
 
 #main {
@@ -233,11 +240,11 @@ ul {
 }
 
 #nav {
-	position: absolute;
-	right: 40px;
-	height: 53px;
-	line-height: 53px;
-	top: 73px;
+    float: right;
+    height: 53px;
+    margin-right: 27px;
+    margin-top: 32px;
+
 }
 
 #nav a {
@@ -245,7 +252,7 @@ ul {
 	/*text-transform: lowercase;*/
 	color: #FFA92E;
 	text-shadow: 0 1px 1px #32251B;
-	font-size: 1.2em;
+	font-size: 1.0em;
 }
 
 #nav li {
@@ -281,9 +288,9 @@ ul {
 }
 
 #sidebar {
-/* 	box-shadow:-17px -12px 11px #DEB887 ; */
-	box-shadow: -9px -7px 25px #DEB887;
-	background: none repeat scroll 0 0 #32251B;
+    /* 	box-shadow:-17px -12px 11px #DEB887 ; */
+    background: none repeat scroll 0 0 #32251B;
+    box-shadow: 0 0 10px #DEB887;
     color: #E1D2C7;
     float: left;
     padding: 20px;

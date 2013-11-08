@@ -3,7 +3,7 @@
 <script type="text/javascript" src="assets/js/file_uploads.js"></script>
 <script type="text/javascript" src="assets/js/vpb_script.js"></script>
 <div
-	style="font-family: Verdana, Geneva, sans-serif; font-size: 24px; width: 900px;">Upload
+	style="font-family: Verdana, Geneva, sans-serif; font-size: 24px; text-align: center;">Upload
 	CSV Format file for Employee Data</div>
 <br clear="all" />
 <br clear="all" />
