@@ -229,7 +229,9 @@ $emptySeat=$totalSeat - count($data['seated']);
 	
 }
 .multiDelImag {
-	padding-left: 30px;
+    margin-top: -46px;
+    padding-left: 0;
+    position: absolute;
 }
 .roomDetails table{
 	padding: 30px 0px 0px 30px;
@@ -251,5 +253,8 @@ $emptySeat=$totalSeat - count($data['seated']);
 }
 .seatedEmpTableHead {
 	color: black;
+}
+#multiDelForm > table {
+    position: absolute;
 }
 </style>
