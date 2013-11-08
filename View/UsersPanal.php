@@ -86,7 +86,7 @@ if(data.indexOf('Login') != -1)
   }
     
 </script>
-<div style="margin:70px 280px;boder=1px solid red;">
+<div style="margin:70px 280px;boder : 1px solid red;">
   <a href="#createNewUsers"  id='newUserForm' ><h3>Create New User</h3></a>
   <div id="formpanel">
   </div>

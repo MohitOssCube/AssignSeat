@@ -22,11 +22,11 @@ abstract class DBConnection
      */ 
     public function __construct ()
     {
-        $this->_config['DATABSE_USER_NAME'] = 'root';
-        $this->_config['DATABSE_PASSWORD'] = 'root';
-        $this->_config['DATABASE_NAME'] = 'assign_seat';
-        $this->_config['DATABASE_HOST'] = 'localhost';
-        $this->_config['DATABASE_TYPE'] = 'mysql';
+        $this->_config['DATABSE_USER_NAME'] = DB_USER;
+        $this->_config['DATABSE_PASSWORD'] = DB_PASSWORD;
+        $this->_config['DATABASE_NAME'] = DB_COMMON;
+        $this->_config['DATABASE_HOST'] = DB_SERVER;
+        $this->_config['DATABASE_TYPE'] = DB_TYPE;
         $this->_config['DATABASE_PORT'] = null;
         $this->_config['DATABASE_PERSISTENT'] = true;
         $this->_db = db::instance($this->_config);

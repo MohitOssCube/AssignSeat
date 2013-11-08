@@ -12,10 +12,10 @@
  * 
  * *************************************************************************
  */
-define ( 'SITE_URL', 'http://'.$_SERVER['HTTP_HOST'].'/AssignSeat/trunk/' );
+define ( 'SITE_URL', 'http://'.$_SERVER['HTTP_HOST'].'/' );
 
 /*
-* Absolute directory path like /var/www/ulearn//branches/development/
+* Absolute directory path like /var/www/AssignSeat/trunk/development/
 */
 define ( 'SITE_PATH', getcwd () );
 
@@ -33,6 +33,11 @@ define ( 'DB_USER', "root" );
 * Database password
 */
 define ( 'DB_PASSWORD', "root" );
+
+/*
+* Database type
+*/
+define ( 'DB_TYPE', "mysql" );
 
 /*
 * Database name
