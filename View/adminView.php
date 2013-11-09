@@ -26,10 +26,10 @@
 
                 <ul class="adminallMenues">
                     <li><a href="index">Home</a></li>
-                    <li><a href="#" onclick="getUsersPanal()">Users</a></li>
-                    <li><a href="#" onclick="uploadcsv()">Upload CSV File</a></li>
+                    <li><a href="javascript:void(0)" onclick="getUsersPanal()">Users</a></li>
+                    <li><a href="javascript:void(0)" onclick="uploadcsv()">Upload CSV File</a></li>
                     <li><a href="javascript:void(0);" onclick="deptcolor()">Dept Color</a></li>
-                    <li><a href="#" id="logout"><?php echo $lang->LOGOUT ?></a></li>
+                    <li><a href="javascript:void(0)" onclick="logMeOut()" id="logout"><?php echo $lang->LOGOUT ?></a></li>
                 </ul>
             </span>
         </div>
