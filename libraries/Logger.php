@@ -92,8 +92,10 @@ $data['tables'] = "log";
 	{
 		if(!empty($logActivity))
 		{
-			$logData = date('D - d/M/Y - H:i:s').' User " '.strtoupper($logActivity['uname']).' " Assigned the seat number "'.$logActivity['seatid'].'" in room "'.$logActivity['room'].'"' ;
-			$logData .= ' of employee "'.strtoupper($logActivity['ename']).'" at row '.$logActivity['row'].' , computer "'.$logActivity['computerid'].'"'."\r\n<br/>";
+			$logData = date('D - d/M/Y - H:i:s').' User " '.strtoupper($logActivity['uname']).
+			            ' " Assigned the seat number "'.$logActivity['seatid'].'" in room "'.$logActivity['room'].'"' ;
+			$logData .= ' of employee "'.strtoupper($logActivity['ename']).'" at row '.$logActivity['row'].
+			            ' , computer "'.$logActivity['computerid'].'"'."\r\n<br/>";
 			$logData .= 'From the IP '.$_SERVER['REMOTE_ADDR'].' and browser = '.$this->info['Browser']." \r\n<br/>";
 			$logData .= 'Browser version = '.$this->info['Version'].', Os = '.$this->info['Operating System']." \r\n<br/>";
 			$logData .= 'Reason is :- '.$logActivity['reason'].'\r\n<br/>';
@@ -176,7 +178,10 @@ $data['tables'] = "log";
 	{
 		if(!empty($logUpdateSeat))
 		{
-			$logData = date('D - d/M/Y - H:i:s').' User " '.strtoupper($logUpdateSeat['uname']).' " moved the employee "'.strtoupper($logUpdateSeat['ename']).' " From room " '.$logUpdateSeat['frmroom'].' ", Row number "'.$logUpdateSeat['frmrow'].' ", From Computer Id "'.$logUpdateSeat['frmcomputerid'].'" To seat number "'.$logUpdateSeat['seatid'].'" in room "'.$logUpdateSeat['room'].'"' ;
+			$logData = date('D - d/M/Y - H:i:s').' User " '.strtoupper($logUpdateSeat['uname']).
+			            ' " moved the employee "'.strtoupper($logUpdateSeat['ename']).' " From room " '.
+			            $logUpdateSeat['frmroom'].' ", Row number "'.$logUpdateSeat['frmrow'].' ", From Computer Id "'.
+			            $logUpdateSeat['frmcomputerid'].'" To seat number "'.$logUpdateSeat['seatid'].'" in room "'.$logUpdateSeat['room'].'"' ;
 			$logData .= '" at row '.$logUpdateSeat['row'].' , computer "'.$logUpdateSeat['computerid'].'"'."\r\n<br/>";
 			$logData .= 'From the IP '.$_SERVER['REMOTE_ADDR'].' and browser = '.$this->info['Browser']." \r\n<br/>";
 			$logData .= 'Browser version = '.$this->info['Version'].', Os = '.$this->info['Operating System']." \r\n<br/>";

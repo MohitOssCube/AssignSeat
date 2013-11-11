@@ -135,6 +135,12 @@ class MainController extends Acontroller {
 			$inserted = $seatObj->assignSeat ( $info );
 			$sid = $seatObj->getSid ();
 			$ename = $seatObj->getEmpName ();
+			$currentRoomName =$seatObj->getfrmRoom($info['room']);
+			$roomName = $roomName[1];
+			if($info['frmroom'] !== 'employee search box') {
+			    $moveRoomName = $seatObj->getfrmRoom($info['frmroom']);
+			    $moveRoomName = $moveRoomName[1];
+			}
 			/**
 			 * first time seat assignment to the user
 			 */
@@ -144,7 +150,7 @@ class MainController extends Acontroller {
 				$log ['ename'] = $ename;
 				$log ['uname'] = $info ['assignename'];
 				$log ['seatid'] = $sid;
-				$log ['room'] = $info ['room'];
+				$log ['room'] = $roomName;//$info ['room'];
 				$log ['row'] = $info ['row'];
 				$log ['computerid'] = $info ['computerid'] + 1;
 				$log['reason']=$info['details'];
@@ -168,10 +174,10 @@ class MainController extends Acontroller {
 				$log ['ename'] = $ename;
 				$log ['uname'] = $info ['assignename'];
 				$log ['seatid'] = $sid;
-				$log ['room'] = $info ['room'];
+				$log ['room'] = $roomName;//$info ['room'];
 				$log ['row'] = $info ['row'];
 				$log ['computerid'] = $info ['computerid'] + 1;
-				$log ['frmroom'] = $info ["frmroom"];
+				$log ['frmroom'] = $moveRoomName;//$info ["frmroom"];
 				$log ['frmrow'] = $info ["frmrow"];
 				$log ['frmcomputerid'] = $info ["frmcomputerid"] + 1;
 				$log['reason']=$info['details'];

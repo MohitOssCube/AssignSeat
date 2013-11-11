@@ -54,7 +54,7 @@ function createRow($allocatedData, $roomData, $style = '') {
                 if ((isset($tempAllocated [$value ['row_number'] - 1][$i - 1]['computer_id'])) && ($tempAllocated [($value ['row_number']) - 1] [$i - 1] ['computer_id'] == ($i - 1))) {
                     $color = constant(strtoupper(str_replace(' ', '', $tempAllocated [($value ['row_number'] - 1)] [$i - 1] ['department'])));
                     $displayData .= '<div style="float:right; background-color:' .
-                            $color . '; " id = "' . $value ['name'] .
+                            $color . '; " id = "' . $roomData[0]['room_id'] .
                             '_' . ($value ['row_number']) .
                             '_' . ($i - 1) . '" class="cols positionTooltip seatDiv ' .
                             $style . '" ><img id="' .
@@ -63,7 +63,7 @@ function createRow($allocatedData, $roomData, $style = '') {
                             'src="images/green_chair11.png" width = "16px" height = "16px" /></div>';
                 } else {
                     $displayData .= '<div style="float:right" class="cols droppable dropped positionTooltip seatDiv ' .
-                            $style . '" id="' . $value ['name'] . '_' .
+                            $style . '" id="' . $roomData[0]['room_id'] . '_' .
                             ($value ['row_number']) . '_' . ($i - 1) .
                             '"><img src="images/green_seat.jpeg" class="context-menu-sub" /></div>';
                 }
@@ -80,7 +80,7 @@ function createRow($allocatedData, $roomData, $style = '') {
                             $tempAllocated [($value ['row_number'] - 1)] [$i] ['department'])));
                     //$color;	
                     $displayData .= '<div id = "' .
-                            $value ['name'] . '_' . $value ['row_number'] . '_' .
+                            $roomData[0]['room_id'] . '_' . $value ['row_number'] . '_' .
                             $i . '" class="cols positionTooltip seatDiv ' .
                             $style . '" style="background-color:' . $color .
                             ';"><img id="' . $tempAllocated [($value ['row_number'] - 1)] [$i] ['eid'] .
@@ -89,7 +89,7 @@ function createRow($allocatedData, $roomData, $style = '') {
                 } else {
 
                     $displayData .= '<div class="cols droppable dropped positionTooltip seatDiv ' .
-                            $style . '" id="' . $value ['name'] . '_' . $value ['row_number'] . '_' .
+                            $style . '" id="' . $roomData[0]['room_id'] . '_' . $value ['row_number'] . '_' .
                             $i . '"><img src="images/green_seat.jpeg" class="context-menu-sub" /></div>';
                 }
             }

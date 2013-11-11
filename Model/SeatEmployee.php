@@ -182,7 +182,7 @@ class SeatEmployee extends DBConnection {
         $this->setComputer_id ( $assignInfo ['computerid'] );
         $this->setDetails ( $assignInfo ['details'] );
         $this->setStatus ( 1 );
-        $roomId = $this->findRoomId ( $assignInfo ['room'] );
+        $roomId = $assignInfo ['room'];//$this->findRoomId ( $assignInfo ['room'] );
         $sid = $this->findSid ( $roomId, $assignInfo ['row'] );
         $this->setSid ( $sid );
         /**
