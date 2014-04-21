@@ -1,0 +1,19 @@
+{
+    "name": "MohitOssCube/AssignSeat",
+    "description": "Seat management system",
+    "type": "library",
+    "keywords": [
+        "Seat",
+    ],
+    "homepage": "https://github.com/MohitOssCube/AssignSeat",
+    "authors": [
+        {
+            "name": "Mohit K Singh",
+            "email": "mohit.singh2090@gmail.com",
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    
+}
